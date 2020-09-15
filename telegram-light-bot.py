@@ -24,7 +24,7 @@ def lighton(bot,update):
     rdata = aio.receive('lightbot').value
     chat_id = update.message.chat_id
     bot.send_message(chat_id,text='Light is On')
-    bot.send_message(chat_id,text='Request processed')
+    bot.send_message(chat_id,text='Thank you')
 
 
 def lightoff(bot,update):
@@ -32,7 +32,7 @@ def lightoff(bot,update):
     rdata = aio.receive('lightbot').value
     chat_id = update.message.chat_id
     bot.send_message(chat_id,text='Light is Off')
-    bot.send_message(chat_id,text='Request processed')
+    bot.send_message(chat_id,text='Thank you')
    
 def chooser(bot,update):
           chat_id = update.message.chat_id
