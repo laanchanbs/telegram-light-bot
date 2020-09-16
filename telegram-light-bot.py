@@ -19,14 +19,14 @@ def lightoff(bot,update):
     rdata = aio.receive('lightbot').value
     chat_id = bot.message.chat_id
     bot.message.reply_text('Okay. Turning off the light')
-    update.bot.sendPhoto(chat_id=chat_id, photo="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8jpdHR_pFaoP2Vudl7k-46mSK7I3shuCvFw&usqp=CAU", caption="Light off")
+    update.bot.sendPhoto(chat_id=chat_id, photo="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTV6dJmnfFxyqSVMcjmh-FWb0H3oNkFTxp3mw&usqp=CAU", caption="Light off")
     
 def lighton(bot,update):
     data = aio.send('lightbot', 1)
     rdata = aio.receive('lightbot').value
     chat_id = bot.message.chat_id
     bot.message.reply_text('Okay. Turning on the light')
-    update.bot.sendPhoto(chat_id=chat_id, photo="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRgKuBghXuR_IjPXnRu9o2znn0O_avidTs-ig&usqp=CAU", caption="Light on")
+    update.bot.sendPhoto(chat_id=chat_id, photo="https://cnet1.cbsistatic.com/img/KYlEnsvZxluVDRbk26tFuBX2rpg=/1200x675/2019/07/26/6e2a7516-91b8-4818-8a8d-5db444bc2f54/wyze-bulb-2-720.jpg", caption="Light on")
    
 def chooser(bot,update):
           chat_id = bot.message.chat_id
